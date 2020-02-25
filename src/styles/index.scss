@@ -12,28 +12,39 @@
 
 */
 
-.button-close {
-  cursor: pointer;
-  position: relative;
-    left: 50px;
- 
-}
+
 
 body {
 
     background-color: #e8ecef;
 
-    
+    background-image: url("https://fbcd.co/images/products/61e4f93baa251a8d8c5475e81e1cd394_resize.jpg"),
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+input {
+width: 500px;
+border: 5px solid #0099ff;
+
+
+background-image: url("https://fbcd.co/images/products/61e4f93baa251a8d8c5475e81e1cd394_resize.jpg"),
+
 }
 
 .card {
 width: 500px;
 height: auto;
   
-  border: 5px solid gray;
-  margin: auto;
+   border: 5px solid #0099ff;
+ 
   font-family: 'Courier New', Courier, monospace;
 
+  background-image: url("https://fbcd.co/images/products/61e4f93baa251a8d8c5475e81e1cd394_resize.jpg"),
 }
 
 h1 {
@@ -44,5 +55,13 @@ font-size: 50px;
 text-align: center;
 padding-top: 20px;
 padding-bottom: 25px;
+
+}
+
+h2 {
+
+font-family: 'Courier New', Courier, monospace;
+text-align: center;
+
 
 }

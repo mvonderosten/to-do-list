@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
-export function Card() {
+export function Card(props) {
 	const [list, setlist] = useState([]);
 	const [content, setContent] = useState();
 	const [remove, setRemove] = useState("");
@@ -8,35 +9,17 @@ export function Card() {
 	return (
 		<div className="card">
 			<div className="card-body">
-				<div className="text-center">
-					<input
-						value={content}
-						onChange={e => setContent(e.target.value)}
-						onKeyPress={e => {
-							if (e.key === "Enter") {
-								setlist(list.concat(content));
-								setContent("");
-							}
-						}}
-					/>
-
-					{list.map((item, index) => {
-						return (
-							<div
-								key={index}
-								onClick={() =>
-									setlist(list.filter(e => e !== item))
-								}>
-								<ul>
-									<li>
-										{"I need to "} {item}
-									</li>
-								</ul>
-							</div>
-						);
-					})}
+				<div>
+					<div className="result">
+						{props.one} {props.two}
+					</div>
 				</div>
 			</div>
 		</div>
 	);
 }
+
+Card.propTypes = {
+	one: PropTypes.string,
+	two: PropTypes.bool
+};
